@@ -106,6 +106,26 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .project-links .github-link {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        @media (max-width: 500px) {
+            .project-links {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
     </style>
 </head>
 
@@ -173,15 +193,36 @@
             </section>
 
         </div>
+        
+        <div class="project-links">
+            <a
+                class="github-link"
+                href="https://github.com/YOUR-ORG/YOUR-REPO"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View Project on GitHub
+            </a>
 
-        <a
-            class="github-link"
-            href="https://github.com/berdyshevol/careerbridge-csi5324"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            View Project on GitHub
-        </a>
+            <a
+                class="github-link"
+                href="https://careerbridge-csi5324.atlassian.net/jira/software/projects/SCRUM/boards/1"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View Jira Board
+            </a>
+
+            <a
+                class="github-link"
+                href="https://careerbridge-csi5324.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Visit Live Website
+            </a>
+        </div>
+
     </main>
 </body>
 </html>
